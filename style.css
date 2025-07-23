@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* This specifies that the character encoding for the stylesheet is UTF-8,
+ which supports a wide range of characters. */
+ 
+*{
+  margin: 0;
+  padding: 0;
+  /*   remove default margins and padding. */
+  box-sizing: border-box;
+   /*ensures that padding and border are included in the element’s total width and height.  */
+  font-family: "Ubuntu", sans-serif;
+  /* sets the font to "Ubuntu" with a fallback to any sans-serif font if "Ubuntu" is unavailable. */
+}
+
+body 
+	{
+	  display: flex;/*makes the body a flex container.*/
+	  height: 100vh;/*  sets the body’s height to 100% of the viewport height. */
+	  align-items: center; 
+	  justify-content: center; 
+	  /* center content both horizontally and vertically. */
+	  background: linear-gradient(to right, maroon,fuchsia);
+	  /* applies a gradient background that transitions from maroon to fuchsia. */
+	}
+
+.mainContainer		
+ 	{
+	  width: 25rem; /*sets the width.  */
+	  height: auto;/* allows height to adjust based on content.  */
+	  border-radius: 1rem;/* rounds the corners. */
+	  background: silver; /*  sets the background color. */
+	  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+				0 10px 10px rgba(0,0,0,0.22);
+		/* adds a shadow with two different layers for a 3D effect. */
+	}
+
+.searchInput 
+	{
+	  width: 100%; /* makes it full-width */
+	  display: flex; /* arranges its children in a flexible layout. */
+	  padding: 1rem 1rem; /*  adds padding inside the container */
+	  justify-content: center; /* centers the child elements horizontally.  */
+	}
+
+.searchInput input 
+	{
+	  width: 100%; /* makes the input field full-width.  */
+	  height: 2rem; /*  sets the height. */
+	  outline: none;/* removes the default focus outline. */
+	  font-size: 1rem; /*  sets the font size. */
+	  color: #525050; /*  sets the text color. */
+	  padding: 0.2rem 0.5rem; /* adds padding inside the input field. */
+	  border-radius: 1.5rem; /* rounds the corners */
+	  border: 1px solid #b3b3b3; /* adds a border with a light gray color. */
+	}
+
+.searchInput input:focus 
+	{
+	  border: 1px  #ff80ff;	/* changes the border color to a light pink  */
+	}
+
+.searchInput button {
+  width: 2.2rem; /*  set the size of the button.*/
+  height: 2rem; /* set the size of the button */
+  cursor: pointer; /* changes the cursor to a pointer when hovered. */
+  color: purple; /* sets the text colo */
+  border-radius: 50%; /* makes the button circular. */
+  margin-left: 0.4rem; /* adds space between the input field and button.  */
+  transition: all 0.3s ease; /* adds a smooth transition effect. */
+  background-color: #fff; /*  sets the background color to white.  */
+  border: 1px solid #b3b3b3; /* adds a light gray border. */
+}
+
+.searchInput button:hover
+	 {
+	  color:purple;	/* changes the text color. */
+	  background-color:olive; /* changes the background color. */
+	  border: 1px solid #9c9dde; /* changes the border color. */
+	}
+
+.weatherIcon 
+	{
+	  display: flex;	/* arranges its children in a flexible layout. */
+	  padding-top: 0.5rem;
+	  padding-bottom: 0.5rem; /*
+	  add vertical padding.  */
+	  justify-content: center; /* centers the icon horizontally. */
+	}
+
+.weatherIcon img 
+	{
+	  max-width: 100%;	 /* ensures the image does not exceed the container width. */
+	  width: 8rem; /* sets a fixed width for the image.  */
+	}
+
+.weatherDetails .temp
+	{
+	 font-size: 2rem; /* sets the font size. */
+	}
+	
+.cityDetails 
+	{
+	  color: #323232; /* sets the text color */
+	  font-size: 2.5rem; /* sets the font size. */
+	  text-align: center; /*  centers the text. */
+	  margin-bottom: 0.5rem; /* adds space below the element. */
+	}
+
+.cityDetails .date 
+	{
+	  color: #323232;	/* sets the text color. */
+	  font-size: 1.5rem; /* sets the font size. */
+	  text-align: center; /*  centers the text. */
+	  margin-bottom: 0.5rem; /*  adds space below the element. */
+	}
+
+.windDetails 
+	{
+	  display: flex;	/*  arranges its children in a flexible layout. */	
+	  margin-top: 1rem;
+	  margin-bottom: 1.5rem;
+	   /* add vertical spacing. */
+	  justify-content: space-around; /* distributes the children with space around them. */
+	}
+
+.windDetails .humidityBox
+	 {
+	  display: flex;	/* arranges its children in a flexible layout. */
+	  font-size: 1rem; /*  sets the font size. */
+	  color: #323232; /* sets the text color. */
+	}
+
+.windDetails .humidity .humidityValue
+	 {
+	  text-align: center;	/*  centers the text.  */
+	  font-size: 2rem;	/*  sets the font size. */
+	  color: #323232;  /* sets the text color. */
+	}
+
+.windDetails .humidityBox img 
+	{
+	  max-height: 3rem;	/*  limits the image height. */
+	  margin-right: 0.5rem; /*  */
+	}
+
+.windDetails .windSpeed
+	{
+	  display: flex; /* arranges its children in a flexible layout. */
+	  font-size: 1rem; /*  sets the font size. */
+	  color: #323232; /* sets the text color. */
+	}
+
+.windDetails .windSpeed img
+	{
+	  max-height: 3rem;	/*  Ensures that the image does not exceed a height of 3 rem units. */
+	  margin-right: 0.5rem; /* Adds a 0.5 rem margin to the right of the image to create space between the image and the next element. */
+	}
+
+
+image-logo
+	{
+        height: auto;	/* Ensures the height scales proportionally based on the width. */
+        width: auto;	/*  Ensures the width scales proportionally based on the height. */
+        filter: drop-shadow(20px 10px 10px black);		/*  Adds a drop shadow to the image with a horizontal offset of 20px, 
+        												a vertical offset of 10px, a blur radius of 10px, and a black color. */
+      }
