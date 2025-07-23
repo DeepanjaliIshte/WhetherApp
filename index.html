@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML. -->
+<html lang="en">
+<!-- Opens the HTML document and sets the language to English. -->
+<head>
+<!-- Contains meta-information about the document. -->
+    <meta charset="UTF-8">
+   <!--  Specifies the character encoding for the HTML document (UTF-8). -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--  Ensures compatibility with older versions of Internet Explorer. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport to make the web page responsive -->
+    <title>Weather App - DeepanjaliIshte</title>
+    <!--  Sets the title of the web page, which appears in the browser tab. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- search symbol  -->
+    <!-- Links to an external CSS file for Font Awesome icons. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links to an external CSS file for additional styling. -->
+</head>
+
+
+<body>
+<!-- Contains the main content of the web page. -->
+    <div class="container">  
+    <!--  A container div to group the content. -->
+    <header> 
+    <!-- Defines the header section of the web page. -->
+     <img src="images/weather-season.gif" alt="Weather GIF" style="height:350px; width:470px; filter: drop-shadow(5px 5px 5px black);"> 
+	   <!-- An image element with a source, alternative text, and inline styles for height, width, and drop-shadow.   -->
+	     <h1>Welcome to the Weather Web App</h1>
+	     <!-- A main heading for the web page. -->
+	     <h5>: Created by Deepanjali Ishte</h5>
+	     <!-- A subheading with the creator's name. -->
+    </header>
+    	<br>
+    	<br>
+    	
+        <main>
+        <!-- Defines the main content section. -->
+            <h2>Technologies Used:</h2>
+           <!--   A subheading for the technologies used. -->
+            <p>Java, Servlet, JSP, HTML, JS, OpenWeather API</p>
+           <!--  A paragraph listing the technologies. -->
+            <form action="MyServlet" method="post" class="searchInput">
+            <!-- A form that sends a POST request to MyServlet when submitted, with client-side validation on submit. -->
+                <input type="text" placeholder="Enter City Name" id="searchInput" name="city" >
+                 <!-- An input field for the city name with a placeholder. -->
+                <button id="searchButton" type="submit">
+                <!-- A submit button for the form. -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- A Font Awesome search icon inside the button. -->
+                </button>
+            </form>
+
+            <div id="weather-info">
+            <!-- An empty div where weather information will be displayed. -->
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+	<!-- Links to an external JavaScript file for additional functionality. -->
+</body>
+</html>
