@@ -19,4 +19,4 @@ It makes a request to the OpenWeather API to get the weather data for the specif
 The servlet processes the API response and forwards the data to a JSP page.</br>
 3] JSP Rendering:-</br>
 The JSP page dynamically generates the HTML to display the weather information based on the data provided by the servlet.</br>
-https://github.com/user-attachments/assets/40b33eea-fd0b-47e6-9035-c318c5e5a473
+
